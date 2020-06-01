@@ -32,12 +32,12 @@ check "InfectionMap_"
 
 detect "RiskMap_"
 if [ "$DIFF" != "" ]; then
-	twitter "#海外安全情報 危険地図の変更を検知しました！ $DIFF (自動投稿)"
+	/usr/local/bin/twitter "#海外安全情報 危険地図の変更を検知しました！ $DIFF (自動投稿)"
 fi
 
 detect "InfectionMap_"
 if [ "$DIFF" != "" ]; then
-	twitter "#海外安全情報 感染症地図の変更を検知しました！ $DIFF (自動投稿)"
+	/usr/local/bin/twitter "#海外安全情報 感染症地図の変更を検知しました！ $DIFF (自動投稿)"
 fi
 
 popd >> /dev/null
