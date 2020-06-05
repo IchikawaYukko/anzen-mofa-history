@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+  anzen_mofa:
+    image: anzen_mofa
+    build:
+      context: .
+    volumes:
+      - ./:/data
